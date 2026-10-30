@@ -1,9 +1,9 @@
 TinyTweens
 ==========
 
-A lightweight tweening library written in C.
+A tiny tweening library written in C.
 
-TTweens allows you to smoothly animate float values over time using
+TinyTweens allows you to smoothly animate float values over time using
 different easing styles and directions.
 
 GETTING STARTED
@@ -119,23 +119,11 @@ Example:
 UPDATING TWEENS
 ---------------
 
-Call TTweenStep once per frame, passing the elapsed frame time
-in seconds.
+Call TTweenStep once per frame, passing dt.
 
 Example using raylib:
 
     TTweenStep(GetFrameTime());
-
-IMPORTANT NOTES
----------------
-
-- The pointer passed to TTweenFloat must remain valid while its
-  tween is active.
-- TTweenStep must be called regularly to update animations.
-- Only one active tween can target a given float pointer.
-- Starting another tween on the same pointer replaces the
-  previous tween.
-- The library currently supports float values.
 
 EXAMPLE
 -------
